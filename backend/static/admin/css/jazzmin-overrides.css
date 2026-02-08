@@ -1,0 +1,123 @@
+/* Modern Jazzmin polish for Cerebro Energia admin */
+:root {
+  --ce-accent: #ff7a2f;
+  --ce-accent-dark: #e66a21;
+  --ce-surface: #121826;
+  --ce-surface-2: #0f141f;
+  --ce-border: rgba(255, 255, 255, 0.08);
+  --ce-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+body {
+  background: radial-gradient(circle at top, rgba(15, 107, 95, 0.2), transparent 55%),
+    #0b0f1a;
+}
+
+.navbar,
+.main-header {
+  background: linear-gradient(90deg, #0b0f1a, #121826);
+  border-bottom: 1px solid var(--ce-border) !important;
+  box-shadow: var(--ce-shadow);
+}
+
+.brand-link {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.sidebar {
+  background: #0e1420 !important;
+  border-right: 1px solid var(--ce-border);
+}
+
+.content-wrapper {
+  background: transparent;
+}
+
+.content-header h1,
+.content-header h2,
+.content-header h3 {
+  font-weight: 700;
+}
+
+.card {
+  background: var(--ce-surface);
+  border: 1px solid var(--ce-border);
+  border-radius: 18px;
+  box-shadow: var(--ce-shadow);
+}
+
+.card-header {
+  border-bottom: 1px solid var(--ce-border);
+}
+
+.btn {
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.55rem 1.1rem;
+}
+
+.btn-primary {
+  background: var(--ce-accent) !important;
+  border-color: var(--ce-accent) !important;
+}
+
+.btn-primary:hover {
+  background: var(--ce-accent-dark) !important;
+  border-color: var(--ce-accent-dark) !important;
+  transform: translateY(-1px);
+}
+
+.btn-outline-primary {
+  color: var(--ce-accent) !important;
+  border-color: var(--ce-accent) !important;
+}
+
+.btn-outline-primary:hover {
+  background: rgba(255, 122, 47, 0.12) !important;
+}
+
+.table thead th {
+  border-bottom: 1px solid var(--ce-border);
+}
+
+.table tbody tr {
+  border-color: var(--ce-border);
+}
+
+.table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.info-box,
+.small-box {
+  border-radius: 16px;
+  border: 1px solid var(--ce-border);
+  background: var(--ce-surface-2);
+  box-shadow: var(--ce-shadow);
+}
+
+.info-box-icon,
+.small-box .icon {
+  color: var(--ce-accent) !important;
+}
+
+.form-control,
+.select2-selection,
+.custom-file-label {
+  background: #0f141f;
+  border: 1px solid var(--ce-border);
+  color: #f5f7fa;
+  border-radius: 12px;
+}
+
+.form-control:focus,
+.select2-selection:focus {
+  border-color: var(--ce-accent);
+  box-shadow: 0 0 0 0.2rem rgba(255, 122, 47, 0.2);
+}
+
+.login-page .card {
+  border-radius: 24px;
+}
