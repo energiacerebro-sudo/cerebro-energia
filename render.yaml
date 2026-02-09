@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: cerebro-energia
+    name: cerebro-energia-backend
     runtime: python
     plan: free
     rootDir: backend
