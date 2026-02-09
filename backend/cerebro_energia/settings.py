@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -57,9 +58,12 @@ TEMPLATES = [
 WSGI_APPLICATION = "cerebro_energia.wsgi.application"
 ASGI_APPLICATION = "cerebro_energia.asgi.application"
 
+DATABASE_URL = os.getenv("DATABASE_URL")
 POSTGRES_DB = os.getenv("POSTGRES_DB")
 
-if POSTGRES_DB:
+if DATABASE_URL:
+    DATABASES = {"default": dj_database_url.parse(DATABASE_URL, conn_max_age=600)}
+elif POSTGRES_DB:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
@@ -210,6 +214,5 @@ JAZZMIN_UI_TWEAKS = {
         "success": "btn-success",
     },
 }
-
 
 

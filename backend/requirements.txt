@@ -6,5 +6,5 @@ django-redis==5.4.0
 django-admin-sortable2==2.2.2
 django-ckeditor-5==0.2.19
 django-jazzmin==3.0.1
+dj-database-url==2.2.0
 gunicorn==21.2.0
-
